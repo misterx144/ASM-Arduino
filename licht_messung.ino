@@ -26,7 +26,7 @@ void loop ( )  {                         // Code written in it will run repeated
 
   sensorValue = analogRead ( sensorPin ) ;          // Reading data from pin A0 and storing in Sensor value
 //detection pet
-if ( sensorValue < 1000 && sensorValue >900)                                                  
+if ( sensorValue < 1005 && sensorValue >985)                                                  
 
 { 
 
@@ -46,7 +46,7 @@ if ( sensorValue < 1000 && sensorValue >900)
 
 }
 // detection glas
-else if ( sensorValue <900 && sensorValue >600)
+else if ( sensorValue <985 && sensorValue >600)
 
 {
 
@@ -68,7 +68,7 @@ analogWrite(redPin, 255);
   analogWrite(greenPin, 0);
   analogWrite(bluePin, 0);
 }
-else if ( sensorValue >1000)
+else if ( sensorValue >1005)
 {
   analogWrite(redPin, 0);
   analogWrite(greenPin, 0);
